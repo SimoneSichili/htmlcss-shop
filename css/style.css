@@ -12,14 +12,52 @@
 
 /* ------------- */
 
-.box {
+/* riga */
+.row {
+  margin-top: 30px;
+}
+/* /riga */
+
+
+/* box prodotto */
+.product {
   width: 350px;
-  height: 350px;
-  background: red;
-  border: 1px solid black;
   display: inline-block;
+  position: relative;
+  cursor: pointer;
 }
 
-.row {
-  margin-top: 50px;
+.product-img {
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
+
+.discount {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+}
+
+.green {
+  background: green;
+}
+
+.red {
+  background: red;
+}
+
+.heart {
+  width: 100%;
+  position: absolute;
+  bottom: 10px;
+  font-size: 40px;
+  color: red;
+  display: none;
+}
+
+.product:hover .heart {
+  display: block;
+}
+/* /box prodotto */
